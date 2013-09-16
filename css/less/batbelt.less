@@ -1,0 +1,236 @@
+// LESS Batbelt
+// Version 0.1
+// by Dmitry Fadeyev, Chris Coyier, Myles O'Connor
+// 07.25.13
+
+
+////////////////// 1. VENDOR PREFIX MIXINS //////////////////
+
+////// 1.1 Opacity //////
+	.opacity(@opacity: 0.5) {
+	  -moz-opacity: @opacity;
+	  -khtml-opacity: @opacity;
+	  -webkit-opacity: @opacity;
+	  opacity: @opacity;
+	  @opperc: @opacity * 100;
+	  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+	  filter: ~"alpha(opacity=@{opperc})";
+	}
+	
+	// Example usage, with default values(s)
+	.div-1-1a {.opacity();}
+	// or, with custom value(s)
+	.div-1-1b {.opacity(.2);}
+	
+	
+////// 1.2 Border-Radius (all corners the same) //////
+	.border-radius (@radius: 5px) {
+	  -webkit-border-radius: @radius;
+	  -moz-border-radius: @radius;
+	  -ms-border-radius: @radius;
+	  -o-border-radius: @radius;
+	  border-radius: @radius;
+	}
+	
+	// Example usage, with default values(s)
+	.div-1-2a {.border-radius();}
+	// or, with custom value(s)
+	.div-1-2b {.border-radius(8px);}
+	
+	
+////// 1.3 Border-Radius (all corners different) //////
+	.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	-webkit-border-top-right-radius:    @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius:  @bottomleft;
+	-webkit-border-top-left-radius:     @topleft;
+
+	-moz-border-radius-topright:        @topright;
+	-moz-border-radius-bottomright:     @bottomright;
+	-moz-border-radius-bottomleft:      @bottomleft;
+	-moz-border-radius-topleft:         @topleft;
+
+	border-top-right-radius:            @topright;
+	border-bottom-right-radius:         @bottomright;
+	border-bottom-left-radius:          @bottomleft;
+	border-top-left-radius:             @topleft;
+
+	-moz-background-clip:    padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip:         padding-box; 
+	}
+	
+	// Example usage, with default values(s)
+	.div-1-3a {.border-radiuses();}
+	// or, with custom value(s)
+	.div-1-3b {.border-radiuses(1px; 2px; 3px; 4px);}
+	
+	
+////// 1.4 Columns //////
+	.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+	  -moz-column-width: @colwidth;
+	  -moz-column-count: @colcount;
+	  -moz-column-gap: @colgap;
+	  -moz-column-rule-color: @columnRuleColor;
+	  -moz-column-rule-style: @columnRuleStyle;
+	  -moz-column-rule-width: @columnRuleWidth;
+	  -webkit-column-width: @colwidth;
+	  -webkit-column-count: @colcount;
+	  -webkit-column-gap: @colgap;
+	  -webkit-column-rule-color: @columnRuleColor;
+	  -webkit-column-rule-style: @columnRuleStyle;
+	  -webkit-column-rule-width: @columnRuleWidth;
+	  column-width: @colwidth;
+	  column-count: @colcount;
+	  column-gap: @colgap;
+	  column-rule-color: @columnRuleColor;
+	  column-rule-style: @columnRuleStyle;
+	  column-rule-width: @columnRuleWidth;
+	}
+	
+	// Example usage, with default values(s)
+	.div-1-4a {.columns();}
+	// or, with custom value(s)
+	.div-1-4b {.columns(200; 3; 10px; #ccc; solid);}
+	
+	
+////// 1.5 Box Shadow //////
+	.box-shadow (@x: 0; @y: 0; @blur: 1px; @color: #000) {
+	  box-shadow: @arguments;
+	  -moz-box-shadow: @arguments;
+	  -webkit-box-shadow: @arguments;
+	}
+	
+	// Example usage, with default values(s)
+	.div-1-5a {.box-shadow();}
+	// or, with custom value(s)
+	.div-1-5b {.box-shadow(2px; 5px; 5px; 000);}
+
+
+////// 1.6 Gradients //////	
+	.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+	  background: @color;
+	  background: -webkit-gradient(linear,
+	                               left bottom,
+	                               left top,
+	                               color-stop(0, @start),
+	                               color-stop(1, @stop));
+	  background: -ms-linear-gradient(bottom,
+	                                  @start,
+	                                  @stop);
+	  background: -moz-linear-gradient(center bottom,
+	                                   @start 0%,
+	                                   @stop 100%);
+	  background: -o-linear-gradient(@stop,
+	                                 @start);
+	  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+	}
+	
+	// Example usage, with default values(s)
+	.div-1-6a {.gradient();}
+	// or, with custom value(s)
+	.div-1-6b {.gradient(black; black; red);}
+	
+
+////// 1.7 Box Shadow //////	
+	.box-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+    -webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+    box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+	}	
+	
+	// Example usage, with default values(s)
+	.div-1-7a {.box-shadow();}
+	// or, with custom value(s)
+	.div-1-7b {.box-shadow(2px; 2px; 5px; 0.5);}
+	
+	
+////// 1.8 Transitions //////		
+	.transition(@select: all, @duration: 0.2s, @ease: ease-in-out) {
+	  -moz-transition: @select @duration @ease;
+	  -webkit-transition: @select @duration @ease;
+	  -o-transition: @select @duration @ease;
+	  transition: @select @duration @ease;
+	}	
+	
+	// Example usage, with default values(s)
+	.div-1-8a {.transition();}
+	// or, with custom value(s)
+	.div-1-8b {.transition(all 0.5s ease-in-out);}
+
+
+////// 1.9 Transform //////
+	.transform(...) {
+	  -webkit-transform: @arguments;
+	  -moz-transform: @arguments;
+	  -o-transform: @arguments;
+	  -ms-transform: @arguments;
+	  transform: @arguments;
+	}
+	.rotate(@deg:5deg){
+	  .transform(rotate(@deg));
+	}
+	.scale(@scale:1.5){
+	  .transform(scale(@scale));
+	}
+	
+	// Example usage, with custom value(s)
+	.div-1-9b {.rotate(0deg);}
+	.div-1-9b {.scale(1.0);}
+
+
+////// 1.10 User Select //////
+	.user-select(@argument: none) {
+	  -webkit-user-select: @argument;
+	  -moz-user-select: @argument;
+	  -ms-user-select: @argument;
+	  user-select: @argument;
+	}
+
+	// Example usage, with default values(s)
+	.div-1-10a {.user-select();}
+	// or, with custom value(s)
+	.div-1-10b {.user-select(all);}
+
+
+////// 1.11 Inner Shadow //////
+	.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
+	  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+	  -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+	  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+	}
+
+	// Example usage, with default values(s)
+	.div-1-11a {.inner-shadow();}
+	// or, with custom value(s)
+	.div-1-11b {.inner-shadow(5px; 5px; 10px; 0.5);}
+
+
+////// 1.12 Box Sizing //////
+	.box-sizing(@sizing: border-box) {
+	  -ms-box-sizing: @sizing;
+	  -moz-box-sizing: @sizing;
+	  -webkit-box-sizing: @sizing;
+	  box-sizing: @sizing;
+	}
+	
+	// Example usage, with default values(s)
+	.div-1-12a {.box-sizing();}
+	// or, with custom value(s)
+	.div-1-12b {.box-sizing(content-box);}
+
+
+////// Sample button //////	
+button.test {
+	text-shadow: 1px 1px 2px white;
+	border: 1px solid gray;
+	padding: 10px 30px;
+	.gradient(white; #ccc; white);
+	.border-radius(30px);
+	.box-shadow(0px; 0px; 10px; 0.2);
+	&:active {
+		.transition();
+		.gradient(#ccc; white; #ccc);
+		.box-shadow(0px; 0px; 0px; 0.0);
+	}
+}
