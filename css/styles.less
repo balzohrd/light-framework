@@ -96,6 +96,26 @@ header {
 			li {
 				display: inline-block;
 				margin-left: 20px;
+				
+				a {
+					color: inherit;
+					transition: color .2s linear; 
+				    -o-transition: color .2s linear; 
+				    -moz-transition: color .2s linear; 
+				    -webkit-transition: color .2s linear;
+					text-decoration: none;
+					
+					&:hover {
+						color: @1;
+					}
+				}
+				
+				i {
+					font-size: 18px;
+					position: relative;
+					top: 2px;
+					left: -4px;
+				}
 			}
 		}
 	}
