@@ -3,6 +3,14 @@
 @medgray: #dddddd;
 @darkgray: #777777;
 @darkergray: #222222;
+
+// Kuler palette
+@1: #ea6044;
+@2: #f8cb4e;
+@3: #f5e5c1;
+@4: #3f5666;
+@5: #303440;
+
 @opensans: 'Open Sans', sans-serif;
 
 // Body styles
@@ -13,7 +21,7 @@
 body {
 	font-family: @opensans;
 	color: @darkgray;
-	text-shadow: 0px 2px 1px @lightgray;
+	text-shadow: 0px 1px 1px @lightgray;
     background: white;
     margin: 0 auto;
     padding: 0;
@@ -42,9 +50,28 @@ body {
 
 .col-1, .col-2, .col-3, .col-4 {
 	padding: 5px;
-	background: @medgray;
 	margin-bottom: 20px;
 	.border-radius(3px);
+}
+
+.col-1 {
+	color: white;
+	background: @1;
+	text-shadow: none;
+}
+
+.col-2 {background: @3;}
+
+.col-3 {
+	color: white;
+	background: @4;
+	text-shadow: none;
+}
+
+.col-4 {
+	color: white;
+	background: @5;
+	text-shadow: none;
 }
 
 .clearfix {clear:both;}
@@ -57,6 +84,7 @@ header {
 	background: @lightgray;
 	
 	.col-1 {
+		color: @4;
 		padding: 12px 5px;
 		background: transparent;
 		margin-bottom: 0;
@@ -75,6 +103,7 @@ header {
 
 .video-holder {
 	position: relative;
+	z-index: 99;
     padding-bottom: 56.25%;
     padding-top: 30px;
     height: 0;
@@ -90,6 +119,34 @@ header {
 	    width: 100%;
 	    height: 100%;
 	}
+	
+	#picture-in-picture {
+		position: absolute;
+		width: 20%;
+		height: 20%;
+		top: 0;
+		right: 0;
+		z-index: 100;
+		
+		.video-holder-sm {
+			position: relative;
+		    padding-bottom: 56.25%;
+		    padding-top: 30px;
+		    height: 0;
+		    overflow: hidden;
+		    display: block;
+		    .border-radius(3px);
+			
+			iframe, object, embed {
+				.border-radius(3px);
+				position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			}
+		}
+	}
 }
 
 footer {
@@ -99,7 +156,7 @@ footer {
 	display: block;
 	background: @darkergray;
 	color: white;
-	text-shadow: 0px -2px 1px black;
+	text-shadow: 0px -1px 1px black;
 	
 	.col-1 {
 		padding: 12px 5px;
