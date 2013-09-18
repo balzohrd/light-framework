@@ -17,9 +17,12 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
     <!-- FontAwesome -->
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<!-- jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- LESS -->
     <link href="css/styles.less" rel="stylesheet/less" type="text/css" media="screen">
     <script type="text/javascript">
+	    // LESS
 	    less = {
 	        env: "development", // or "production"
 	        async: false,       // load imports async
@@ -34,6 +37,18 @@
 	        rootpath: ":/a.com/"// a path to add on to the start of every url
 	                            //resource
 	    };
+	    // Sticky header
+	    $(function(){
+        var stickyRibbonTop = $('#header').offset().top;
+          
+        $(window).scroll(function(){
+                if( $(window).scrollTop() > stickyRibbonTop ) {
+                        $('#header').css({position: 'fixed', top: '0px'});
+                } else {
+                        $('#header').css({position: 'static', top: '0px'});
+                }
+        });
+        });
 	 
 	</script>
     <script src="js/less.js"></script>
@@ -42,11 +57,11 @@
 </head>
 <!-- !Body -->
 <body>
-	<header>
+	<header id="header">
 		<div class="container">
 			<div class="row">
 				<div class="col-1">
-					<span style="float:left;">Logo goes here</span>
+					<span style="float:left;"><img src="img/sloth.jpg" /></span>
 					<span style="float:right;">
 						<ul class="hidden-phone hidden-tablet">
 							<li><a href="#"><i class="icon-th-large"></i> Home</a></li>
@@ -167,7 +182,5 @@
 		</div>
 	</footer>
 	
-	<!-- !Javascript - at the bottom for fast page loading -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </body>
 </html>
