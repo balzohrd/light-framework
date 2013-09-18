@@ -18,7 +18,7 @@
 	
 	<div class="row">
     	<div class="col-1 list">
-        	<ul class="list">
+        	<ul class="picture-list">
             	<li>
             	    <div class="left">Select Player:</div>
             	    <div class="clearfix"></div>
@@ -60,8 +60,41 @@
 	</div>
 	
 	<div class="row">
-		<div class="col-2">
-			Test content II. <span class="h-t">Hidden tablet.</span>
+		<div class="col-2 list">
+			<ul class="plain-list">
+            	<li>
+            	    <div class="left">Select Player:</div>
+            	    <div class="clearfix"></div>
+                </li>
+            	<li>
+                	<div class="left">
+                	    <div class="item-text">Kobe Bryant</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+            	<li>
+                	<div class="left">
+                	    <div class="item-text">Pau Gasol</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+            	<li>
+                	<div class="left">
+                	    <div class="item-text">Steve Nash</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+            	<li>
+                	<div class="left">
+                	    <div class="item-text">Nick Young</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+        	</ul>
 		</div><!-- /.col-2 -->
 		<div class="col-2">
 			Test content III. <span class="h-d">Hidden desktop.</span>
