@@ -22,7 +22,6 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- LESS/CSS -->
     <link href="css/styles.less" rel="stylesheet/less" type="text/css" media="screen">
-    <link href="css/jquery.sidr.dark.css" rel="stylesheet/less" type="text/css" media="screen">
     <!-- JS -->
     <script src="js/app.js"></script>
     <script src="js/less.js"></script>
