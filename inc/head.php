@@ -12,6 +12,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="" />
 	<meta name="author" content="">
+	<link rel="shortcut icon" href="img/nav.png"/>
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	<!-- Webfont -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
@@ -19,9 +20,11 @@
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<!-- jQuery -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!-- LESS -->
+	<!-- LESS/CSS -->
     <link href="css/styles.less" rel="stylesheet/less" type="text/css" media="screen">
+    <link href="css/jquery.sidr.dark.css" rel="stylesheet/less" type="text/css" media="screen">
     <!-- JS -->
     <script src="js/app.js"></script>
     <script src="js/less.js"></script>
+    <script src="js/jquery.sidr.min.js"></script>
 </head>

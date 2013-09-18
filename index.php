@@ -1,13 +1,26 @@
 <?php include("inc/head.php"); ?>
 <?php include("inc/header.php"); ?>
+ 
+<!-- Sidr menu -->
+<script>
+$(document).ready(function() {
+    $('#right-menu').sidr({
+      name: 'sidr-right',
+      side: 'right'
+    });
+});
+</script>
+
+<div id="sidr-right">
+  <!-- Your content -->
+  <ul>
+    <li><a href="#">List 1</a></li>
+    <li class="active"><a href="#">List 2</a></li>
+    <li><a href="#">List 3</a></li>
+  </ul>
+</div>
 	
 <div class="container">
-	
-	<div class="row">
-		<div class="col-1">
-			Test content I. <span class="h-p">Hidden phone.</span>
-		</div><!-- /.col-1 -->
-	</div><!-- /.row -->
 	
 	<div class="row">
 		<div class="col-1 main-video">
@@ -45,24 +58,16 @@
 	
 	<div class="row">
 		<div class="col-4">
-			<div class="video-holder">
-				<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			</div>
+		    Lorem ipsum.
 		</div><!-- /.col-4 -->
 		<div class="col-4">
-			<div class="video-holder">
-				<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			</div>
+			Lorem ipsum.
 		</div><!-- /.col-4 -->
 		<div class="col-4">
-			<div class="video-holder">
-				<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			</div>
+			Lorem ipsum.
 		</div><!-- /.col-4 -->
 		<div class="col-4">
-			<div class="video-holder">
-				<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			</div>
+			Lorem ipsum.
 		</div><!-- /.col-4 -->
 	</div><!-- /.row -->
 	
