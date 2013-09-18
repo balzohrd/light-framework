@@ -86,18 +86,22 @@ header {
 			
 			li {
 				display: inline-block;
-				margin-left: 20px;
+				margin-left: 2px;
 				
 				a {
 					color: inherit;
-					transition: color .2s linear; 
-				    -o-transition: color .2s linear; 
-				    -moz-transition: color .2s linear; 
-				    -webkit-transition: color .2s linear;
+					background-color: @lightgray;
+                    padding: 6px 17px 8px 20px;
+                    .border-radius(3px);
+					transition: background-color .2s linear; 
+				    -o-transition: background-color .2s linear; 
+				    -moz-transition: background-color .2s linear; 
+				    -webkit-transition: background-color .2s linear;
 					text-decoration: none;
 					
 					&:hover {
-						color: @1;
+						color: white;
+						background-color: @1;
 					}
 				}
 				
@@ -107,6 +111,9 @@ header {
 					top: 2px;
 					left: -4px;
 				}
+			}
+			li:first-child {
+    			margin-left: -30px;
 			}
 		}
 	}
