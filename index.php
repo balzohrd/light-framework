@@ -1,24 +1,5 @@
 <?php include("inc/head.php"); ?>
 <?php include("inc/header.php"); ?>
- 
-<!-- Sidr menu -->
-<script>
-$(document).ready(function() {
-    $('#right-menu').sidr({
-      name: 'sidr-right',
-      side: 'right'
-    });
-});
-</script>
-
-<div id="sidr-right">
-  <!-- Your content -->
-  <ul>
-    <li><a href="#">List 1</a></li>
-    <li class="active"><a href="#">List 2</a></li>
-    <li><a href="#">List 3</a></li>
-  </ul>
-</div>
 	
 <div class="container">
 	
@@ -34,6 +15,49 @@ $(document).ready(function() {
 			</div>
 		</div><!-- /.col-1 -->
 	</div><!-- /.row -->
+	
+	<div class="row">
+    	<div class="col-1 list">
+        	<ul class="list">
+            	<li>
+            	    <div class="left">Select Player:</div>
+            	    <div class="clearfix"></div>
+                </li>
+            	<li>
+                	<div class="left">
+                	    <img src="img/austin.jpg">
+                	    <div class="item-text">Kobe Bryant</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+            	<li>
+                	<div class="left">
+                	    <img src="img/austin.jpg">
+                	    <div class="item-text">Pau Gasol</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+            	<li>
+                	<div class="left">
+                	    <img src="img/austin.jpg">
+                	    <div class="item-text">Steve Nash</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+            	<li>
+                	<div class="left">
+                	    <img src="img/austin.jpg">
+                	    <div class="item-text">Nick Young</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+        	</ul>
+    	</div>
+	</div>
 	
 	<div class="row">
 		<div class="col-2">
