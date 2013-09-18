@@ -21,39 +21,9 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- LESS -->
     <link href="css/styles.less" rel="stylesheet/less" type="text/css" media="screen">
-    <script type="text/javascript">
-	    // LESS
-	    less = {
-	        env: "development", // or "production"
-	        async: false,       // load imports async
-	        fileAsync: false,   // load imports async when in a page under
-	                            // a file protocol
-	        poll: 1000,         // when in watch mode, time in ms between polls
-	        functions: {},      // user functions, keyed by name
-	        dumpLineNumbers: "comments", // or "mediaQuery" or "all"
-	        relativeUrls: false,// whether to adjust url's to be relative
-	                            // if false, url's are already relative to the
-	                            // entry less file
-	        rootpath: ":/a.com/"// a path to add on to the start of every url
-	                            //resource
-	    };
-	    // Sticky header
-	    $(function(){
-        var stickyRibbonTop = $('#header').offset().top;
-          
-        $(window).scroll(function(){
-                if( $(window).scrollTop() > stickyRibbonTop ) {
-                        $('#header').css({position: 'fixed', top: '0px'});
-                } else {
-                        $('#header').css({position: 'static', top: '0px'});
-                }
-        });
-        });
-	 
-	</script>
+    <!-- JS -->
+    <script src="js/app.js"></script>
     <script src="js/less.js"></script>
-	<!-- !Modernizr - All other JS at bottom -->
-	<!--<script src="js/modernizr-1.5.min.js"></script>-->
 </head>
 <!-- !Body -->
 <body>
@@ -63,13 +33,13 @@
 				<div class="col-1">
 					<span style="float:left;"><img src="img/sloth.jpg" /></span>
 					<span style="float:right;">
-						<ul class="hidden-phone hidden-tablet">
+						<ul class="h-p h-t">
 							<li><a href="#"><i class="icon-th-large"></i> Home</a></li>
 							<li><a href="#"><i class="icon-user"></i> Profile</a></li>
 							<li><a href="#"><i class="icon-cogs"></i> Account</a></li>
 							<li><a href="#"><i class="icon-signin"></i> Login</a></li>
 						</ul>
-						<ul class="hidden-desktop">
+						<ul class="h-d">
 							<li><a href="#"><i class="icon-th-large"></i></a></li>
 							<li><a href="#"><i class="icon-user"></i></a></li>
 							<li><a href="#"><i class="icon-cogs"></i></a></li>
@@ -86,15 +56,15 @@
 		
 		<div class="row">
 			<div class="col-1">
-				Test content I. <span class="hidden-phone">Hidden phone.</span>
+				Test content I. <span class="h-p">Hidden phone.</span>
 			</div><!-- /.col-1 -->
 		</div><!-- /.row -->
 		
 		<div class="row">
-			<div class="col-1">
+			<div class="col-1 main-video">
 				<div class="video-holder">
 					<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					<div id="picture-in-picture" class="hidden-phone">
+					<div id="picture-in-picture" class="h-p">
 						<div class="video-holder-sm">
 							<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 						</div>
@@ -105,10 +75,10 @@
 		
 		<div class="row">
 			<div class="col-2">
-				Test content II. <span class="hidden-tablet">Hidden tablet.</span>
+				Test content II. <span class="h-t">Hidden tablet.</span>
 			</div><!-- /.col-2 -->
 			<div class="col-2">
-				Test content III. <span class="hidden-desktop">Hidden desktop.</span>
+				Test content III. <span class="h-d">Hidden desktop.</span>
 			</div><!-- /.col-2 -->
 		</div><!-- /.row -->
 		
