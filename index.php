@@ -63,33 +63,33 @@
 		<div class="col-2 list">
 			<ul class="plain-list">
             	<li>
-            	    <div class="left">Select Player:</div>
+            	    <div class="left">Select Team:</div>
             	    <div class="clearfix"></div>
                 </li>
             	<li>
                 	<div class="left">
-                	    <div class="item-text">Kobe Bryant</div>
+                	    <div class="item-text">Los Angeles Lakers</div>
                     </div>
             	    <div class="right"><i class="icon-angle-right"></i></div>
             	    <div class="clearfix"></div>
             	</li>
             	<li>
                 	<div class="left">
-                	    <div class="item-text">Pau Gasol</div>
+                	    <div class="item-text">Miami Heat</div>
                     </div>
             	    <div class="right"><i class="icon-angle-right"></i></div>
             	    <div class="clearfix"></div>
             	</li>
             	<li>
                 	<div class="left">
-                	    <div class="item-text">Steve Nash</div>
+                	    <div class="item-text">Denver Nuggets</div>
                     </div>
             	    <div class="right"><i class="icon-angle-right"></i></div>
             	    <div class="clearfix"></div>
             	</li>
             	<li>
                 	<div class="left">
-                	    <div class="item-text">Nick Young</div>
+                	    <div class="item-text">Dallas Mavericks</div>
                     </div>
             	    <div class="right"><i class="icon-angle-right"></i></div>
             	    <div class="clearfix"></div>
