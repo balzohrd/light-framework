@@ -4,8 +4,14 @@
 <!-- 3D card -->
 <section class="card-container">
   <div id="card" class="">
-    <figure class="front">1</figure>
-    <figure class="back">2</figure>
+    <figure class="front">
+        <div class="flip"><i class="icon-repeat icon-flip-horizontal"></i></div>
+        1
+    </figure>
+    <figure class="back">
+        <div class="flip"><i class="icon-repeat icon-flip-horizontal"></i></div>
+        2
+    </figure>
   </div>
 </section>
 
@@ -13,22 +19,63 @@
 	
 	<div class="row">
     	<div class="col-1">
-        	<a href="#" id="test">Test.</a>
+        	<a href="#" id="test">Show 3D overlay</a>
     	</div>
 	</div>
 	
-	<!-- Video chat -->
+	<!-- Sortable, searchable list -->
 	<div class="row">
-		<div class="col-1 main-video">
-			<div class="video-holder">
-				<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				<div id="picture-in-picture" class="h-p">
-					<div class="video-holder-sm">
-						<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</div><!-- /.col-1 -->
+    	<div class="col-1 list">
+        	<ul class="sortable-list">
+            	<li>
+            	    <div class="left">Name:</div>
+            	     <div class="right"><i class="icon-sort-by-attributes"></i></div>
+            	    <div class="clearfix"></div>
+                </li>
+            	<li>
+                	<div class="left">
+                	    <div class="item-text">Los Angeles Lakers</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+            	<li>
+                	<div class="left">
+                	    <div class="item-text">Miami Heat</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+            	<li>
+                	<div class="left">
+                	    <div class="item-text">Denver Nuggets</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+            	<li>
+                	<div class="left">
+                	    <div class="item-text">Dallas Mavericks</div>
+                    </div>
+            	    <div class="right"><i class="icon-angle-right"></i></div>
+            	    <div class="clearfix"></div>
+            	</li>
+        	</ul>
+    	</div>
+	</div>
+	
+	<!-- Video chat 
+	<div class="row">
+    	<div class="col-1 main-video">
+    		<div class="video-holder">
+    			<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    			<div id="picture-in-picture" class="h-p">
+    				<div class="video-holder-sm">
+    					<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
 	</div><!-- /.row -->
 	
 	<!-- Calendar -->

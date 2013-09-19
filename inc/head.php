@@ -25,5 +25,5 @@
     <!-- JS -->
     <script src="js/app.js"></script>
     <script src="js/less.js"></script>
-    <script src="js/jquery.sidr.min.js"></script>
+    <script src="js/sidr.js"></script>
 </head>

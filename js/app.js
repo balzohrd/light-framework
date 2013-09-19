@@ -43,8 +43,15 @@ $(document).ready(function () {
     });
     
     // Flip card
-    $('.card-container').click(function () {
-       $('#card').toggleClass("flipped"); 
+    $('.front .flip').click(function () {
+       $('#card').toggleClass("flipped");
+       $('.front .flip').fadeOut(200);
+       $('.back .flip').fadeIn(200); 
+    });
+    $('.back .flip').click(function () {
+       $('#card').toggleClass("flipped");
+       $('.back .flip').fadeOut(200);
+       $('.front .flip').fadeIn(200); 
     });
     
 });// /DOM ready

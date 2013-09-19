@@ -1,0 +1,53 @@
+footer {
+	position: relative;
+	width: 100%;
+	min-height: 200px;
+	display: block;
+	background: @5;
+	color: white;
+	padding-bottom: 100px;
+	
+	.col-4 {
+	    
+	    img.bottom-logo {
+    		width: 122px !important;
+    	    height: 40px !important;
+    	    background:url(../../img/sloth-logo.png) 122px 0;
+		}
+	    
+		padding: 12px 5px;
+		background: transparent;
+		margin-bottom: 0;
+		
+		ul {
+			margin-top: 0;
+			list-style-type: none;
+			
+			li {
+				display: block;
+				line-height: 25px;
+			}
+			li.header {
+    			font-weight: 500 !important;
+    			border-bottom: 1px solid white;
+    			padding-bottom: 8px;
+    			margin-bottom: 8px;
+    			width: 100%;
+			}
+		}
+	}
+	
+	.col-4.links {
+    	text-align: right;
+    	
+    	a {
+        	color: inherit;
+        	text-decoration: none;
+        	
+        	&:hover {
+            	color: @3;
+            	text-decoration: underline;
+        	}
+    	}
+	}
+}
