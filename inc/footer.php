@@ -3,12 +3,14 @@
 		<div class="row">
 			
 			<div class="col-4">
-				<img class="bottom-logo" src="img/img-trans.png" width="1" height="1" />
+				<a href="/light">
+    				<img class="bottom-logo" src="img/img-trans.png" width="1" height="1" />
+				</a>
 			</div>
-			<div class="col-4 h-p">
+			<div class="col-4 h-p h-t">
 				
 			</div>
-			<div class="col-4 h-p">
+			<div class="col-4 h-p h-t">
 				
 			</div>
 			<div class="col-4 links">
