@@ -1,7 +1,21 @@
 <?php include("inc/head.php"); ?>
 <?php include("inc/header.php"); ?>
-	
+
+<!-- 3D card -->
+<section class="card-container">
+  <div id="card" class="">
+    <figure class="front">1</figure>
+    <figure class="back">2</figure>
+  </div>
+</section>
+
 <div class="container">
+	
+	<div class="row">
+    	<div class="col-1">
+        	<a href="#" id="test">Test.</a>
+    	</div>
+	</div>
 	
 	<!-- Video chat -->
 	<div class="row">
