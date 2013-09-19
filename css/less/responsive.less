@@ -9,3 +9,34 @@
 		display: auto;
 	}
 }
+
+// Calendar display
+//Phone
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 479px) {
+	td.day {min-height: 50px; transition: all .5 ease; -moz-transition: all .5 ease; -webkit-transition: all .5 ease;}
+}
+// Tablet
+@media only screen 
+and (min-width : 480px) 
+and (max-width : 767px) {
+	td.day {min-height: 50px; transition: all .5 ease; -moz-transition: all .5 ease; -webkit-transition: all .5 ease;}
+}
+// Large tablet
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) {
+	td.day {min-height: 100px; transition: all .5 ease; -moz-transition: all .5 ease; -webkit-transition: all .5 ease;}
+}
+// Desktop
+@media only screen 
+and (min-width : 1025px)
+and (max-width : 1823px) {
+    td.day {min-height: 150px; transition: all .5 ease; -moz-transition: all .5 ease; -webkit-transition: all .5 ease;}
+}
+// Large desktop
+@media only screen 
+and (min-width : 1824px) {
+	td.day {min-height: 250px; transition: all .5 ease; -moz-transition: all .5 ease; -webkit-transition: all .5 ease;}
+}

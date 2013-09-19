@@ -38,12 +38,12 @@ $(document).ready(function() {
 <div id="sidr-right">
   <!-- Your content -->
   <ul>
-    <li class="active"><a href="/"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/"><i class="icon-double-angle-right"></i> Account option</a></li>
+    <li class="active"><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
+    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
+    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
+    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
+    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
+    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
+    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
   </ul>
 </div>

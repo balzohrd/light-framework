@@ -3,6 +3,7 @@
 	
 <div class="container">
 	
+	<!-- Video chat -->
 	<div class="row">
 		<div class="col-1 main-video">
 			<div class="video-holder">
@@ -16,6 +17,20 @@
 		</div><!-- /.col-1 -->
 	</div><!-- /.row -->
 	
+	<!-- Calendar -->
+	<div class="row">
+    	<div class="col-1 calendar">
+        	<?php
+                include("inc/calendar.php");
+                 $dateComponents = getdate();
+                 $month = $dateComponents['mon']; 			     
+                 $year = $dateComponents['year'];
+                 echo build_calendar($month,$year,$dateArray);
+            ?>
+    	</div>
+	</div>
+	
+	<!-- Lists -->
 	<div class="row">
     	<div class="col-1 list">
         	<ul class="picture-list">
