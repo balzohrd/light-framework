@@ -51,7 +51,7 @@ body {
     width: 50%;
     height: 50%;
     position: fixed;
-    margin: 18% 25% 40px;
+    margin: 12% 25% 40px;
     border: none;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
@@ -444,9 +444,12 @@ ul.picture-list {
         caption {
             width: 100%;
             display: block;
-            text-align: left;
+            text-align: center;
             font-size: 20px;
             margin: 20px 5px;
+            
+            &:before {content: "< "; margin-right: 20px;}
+            &:after {content: ">"; margin-left: 20px;}
         }
         tbody {
             width: 100%;
