@@ -26,3 +26,25 @@ $(window).scroll(function(){
         }
 });
 });
+
+// DOM ready
+$(document).ready(function () {
+    
+    // Show card & white overlay
+    $('#test').click(function () {
+       $('#overlay').fadeIn(500);
+       $('.card-container').fadeIn(500); 
+    });
+    
+    // Hide card & white overlay
+    $('#overlay').click(function () {
+       $('#overlay').fadeOut(500);
+       $('.card-container').fadeOut(500); 
+    });
+    
+    // Flip card
+    $('.card-container').click(function () {
+       $('#card').toggleClass("flipped"); 
+    });
+    
+});// /DOM ready

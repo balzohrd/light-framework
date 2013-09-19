@@ -1,7 +1,9 @@
-// Body styles
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+html {
+    margin: 0;
+    padding: 0;
+}
 
 body {
 	font-family: @opensans;
@@ -14,6 +16,103 @@ body {
     -o-transition: all .2s linear; 
     -moz-transition: all .2s linear; 
     -webkit-transition: all .2s linear;
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    
+    ul {
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
+        -webkit-padding-start: 0;
+    }
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    .opacity(.8);
+    z-index: 110;
+    display: none;
+}
+
+.card-container {
+    display: none;
+    z-index: 111;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    margin: 12% 25% 40px;
+    border: none;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+    background: transparent;
+    &:hover {
+        cursor: pointer;
+    }
+    
+    #card {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-transition: -webkit-transform 1s;
+        -moz-transition: -moz-transform 1s;
+        -o-transition: -o-transform 1s;
+        transition: transform 1s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        transform-origin: right center;
+          
+        figure {
+            top: -140px;
+            left: -40px;
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 260px;
+            color: white;
+            text-align: center;
+            font-family: @opensans;
+            font-weight: 100;
+            font-size: 140px;
+            position: absolute;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+            background: transparent;
+        }    
+        .front {
+            background: @1;
+        }
+            
+        .back {
+            background: @5;
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+        }        
+    }
+    #card.flipped {
+        -webkit-transform: rotateY( 180deg );
+        -moz-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+        }
 }
 
 .container {
@@ -28,40 +127,27 @@ body {
 		height: auto;
 		margin: 0;
 		padding: 0;
+		overflow: hidden;
 		
 		&:after {clear:both;}
 	}
 }
 
 .col-1, .col-2, .col-3, .col-4 {
-	padding: 5px;
+	padding: 5px 20px;
 	margin-bottom: 20px;
 	.border-radius(3px);
 }
 
-.col-1 {
-	color: white;
-	background: @1;
-}
+.col-1 {color: white; background: @1;}
 
-.col-1.main-video {
-    background: @3;
-}
+.col-1.main-video {background: @1;}
 
-.col-2 {
-    color: white;
-    background: @2;
-}
+.col-2 {color: @5; background: @3;}
 
-.col-3 {
-	color: white;
-	background: @4;
-}
+.col-3 {color: white; background: @2;}
 
-.col-4 {
-	color: white;
-	background: @5;
-}
+.col-4 {color: white; background: @4;}
 
 .clearfix {clear:both;}
 
@@ -77,9 +163,15 @@ header {
 	
 	.col-1 {
 		color: @4;
-		padding: 12px 5px;
+		padding: 12px 0;
 		background: transparent;
 		margin-bottom: 0;
+		
+		img.top-logo {
+    		width: 122px !important;
+    	    height: 40px !important;
+    	    background:url(../../img/sloth-logo.png) 0 0;
+		}
 		
 		ul {
 			margin-top: 8px;
@@ -87,18 +179,22 @@ header {
 			
 			li {
 				display: inline-block;
-				margin-left: 20px;
+				margin-left: 2px;
 				
 				a {
 					color: inherit;
-					transition: color .2s linear; 
-				    -o-transition: color .2s linear; 
-				    -moz-transition: color .2s linear; 
-				    -webkit-transition: color .2s linear;
+					background-color: @lightgray;
+                    padding: 6px 17px 8px 20px;
+                    .border-radius(3px);
+					transition: background-color .2s linear; 
+				    -o-transition: background-color .2s linear; 
+				    -moz-transition: background-color .2s linear; 
+				    -webkit-transition: background-color .2s linear;
 					text-decoration: none;
 					
 					&:hover {
-						color: @1;
+						color: white;
+						background-color: @1;
 					}
 				}
 				
@@ -109,9 +205,12 @@ header {
 					left: -4px;
 				}
 			}
+			li:first-child {margin-left: -30px;}
 		}
 	}
 }
+
+.col-1.main-video {padding: 1px;}
 
 .video-holder {
 	position: relative;
@@ -137,8 +236,8 @@ header {
 		position: absolute;
 		width: 20%;
 		height: 20%;
-		top: -5px;
-	    right: -5px;
+		top: -1px;
+	    right: -1px;
 		z-index: 100;
 		
 		.video-holder-sm {
@@ -152,10 +251,10 @@ header {
 			
 			iframe, object, embed {
 				.border-radius(3px);
-				border: 5px solid @3;
+				border: 1px solid @1;
 				position: absolute;
-			    top: -5px;
-			    right: -5px;
+			    top: -1px;
+			    right: -1px;
 			    width: 100%;
 			    height: 100%;
 			}
@@ -166,12 +265,19 @@ header {
 footer {
 	position: relative;
 	width: 100%;
-	height: 200px;
+	min-height: 200px;
 	display: block;
-	background: @darkergray;
+	background: @5;
 	color: white;
 	
-	.col-1 {
+	.col-4 {
+	    
+	    img.bottom-logo {
+    		width: 122px !important;
+    	    height: 40px !important;
+    	    background:url(../../img/sloth-logo.png) 122px 0;
+		}
+	    
 		padding: 12px 5px;
 		background: transparent;
 		margin-bottom: 0;
@@ -181,9 +287,193 @@ footer {
 			list-style-type: none;
 			
 			li {
-				display: inline-block;
-				margin-left: 20px;
+				display: block;
+				line-height: 25px;
+			}
+			li.header {
+    			font-weight: 500 !important;
+    			border-bottom: 1px solid white;
+    			padding-bottom: 8px;
+    			margin-bottom: 8px;
+    			width: 100%;
 			}
 		}
 	}
+	
+	.col-4.links {
+    	text-align: right;
+    	
+    	a {
+        	color: inherit;
+        	text-decoration: none;
+        	
+        	&:hover {
+            	color: @3;
+            	text-decoration: underline;
+        	}
+    	}
+	}
+}
+
+.col-1.list, .col-2.list {
+    padding: 0;
+}
+
+ul.plain-list {
+    list-style-type: none;
+    background: @lightgray;
+    color: @darkergray;
+    margin: 0;
+    padding: 0;
+    
+    li {
+        padding: 15px 20px;
+        &:hover {
+            color: white;
+            background: @darkgray !important;
+            cursor: pointer;
+        }
+                
+        .left {
+            float: left;
+            display: inline-block;
+        }
+        
+        .right {
+            float: right;
+            display: inline-block;
+        }
+    }
+    
+    li:nth-child(odd) {
+        background: @lightgray;
+    }
+    
+    li:nth-child(even) {
+        background: @6;
+    }
+    
+    li:last-child {
+        .border-radiuses(0px, 0px, 3px, 3px);
+    }
+    
+    li:first-child {
+        background: @4;
+        color: white;
+        .border-radiuses(3px, 3px, 0px, 0px);
+        &:hover {
+            background: @4 !important;
+            color: white;
+            cursor: default;
+        }
+        .right {font-size: 20px;}
+    }
+}
+
+ul.picture-list {
+    list-style-type: none;
+    background: @lightgray;
+    color: @darkergray;
+    margin: 0;
+    padding: 0;
+    
+    li {
+        padding: 15px 20px;
+        &:hover {
+            color: white;
+            background: @darkgray !important;
+            cursor: pointer;
+        }
+                
+        .left {
+            float: left;
+            display: inline-block;
+            
+            img {
+                .border-radius(50%);
+                height: 50px;
+                position: relative;
+                top: 3px;
+                margin-right: 20px;
+            }
+            .item-text {
+                display: inline-block;
+                position: relative;
+                top: -17px;
+            }
+        }
+        
+        .right {
+            float: right;
+            display: inline-block;
+            position: relative;
+            top: 15px;
+        }
+    }
+    
+    li:nth-child(odd) {
+        background: @lightgray;
+    }
+    
+    li:nth-child(even) {
+        background: @6;
+    }
+    
+    li:last-child {
+        .border-radiuses(0px, 0px, 3px, 3px);
+    }
+    
+    li:first-child {
+        background: @1;
+        color: white;
+        .border-radiuses(3px, 3px, 0px, 0px);
+        &:hover {
+            background: @1 !important;
+            color: white;
+            cursor: default;
+        }
+        .right {font-size: 20px;}
+    }
+}
+
+.col-1.calendar {
+    padding: 1px;
+    table {
+        display: block;
+        width: 100%;
+        caption {
+            width: 100%;
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            margin: 20px 5px;
+            
+            &:before {content: "< "; margin-right: 20px;}
+            &:after {content: ">"; margin-left: 20px;}
+        }
+        tbody {
+            width: 100%;
+            display: block;
+            tr {
+                display: block;
+                width: 100%;
+                td.day {
+                    color: @1;
+                    background-color: white;
+                    border-left: 1px solid @1;
+                    margin-bottom: 1px;
+                    padding: 2px 5px;
+                }
+                th {padding-left: 5px;}
+                td.day:first-child {border-left: none;}
+                th, td {
+                    font-weight: 100;
+                    text-align: left;
+                    display: inline-block;
+                    width: percentage(1/7);
+                }
+            }
+            tr:last-child {margin-bottom: -1px;}
+        }
+    }
 }
