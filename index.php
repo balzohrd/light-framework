@@ -13,13 +13,34 @@
         2
     </figure>
   </div>
-</section>
+</section><!-- /.card-container -->
+
+<!-- Video chat -->
+<div class="container main-video">
+	<div class="row">
+    	<div class="col-1 main-video">
+    		<div class="video-holder">
+    			<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    			<div id="picture-in-picture" class="h-p">
+    				<div class="video-holder-sm">
+    					<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+	</div><!-- /.row -->
+</div>
 
 <div class="container">
 	
 	<div class="row">
     	<div class="col-1">
         	<a href="#" id="test">Show 3D overlay</a>
+        	<h1>Lorem ipsum dolor</h1>
+        	<h2>Lorem ipsum dolor</h2>
+        	<h3>Lorem ipsum dolor</h3>
+        	<h4>Lorem ipsum dolor</h4>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum quis ipsum sit amet fringilla. Integer hendrerit dui nec nibh tincidunt mattis. Morbi at enim molestie, feugiat ipsum non, lacinia sem. Fusce arcu quam, tincidunt eu dapibus id, aliquam id ligula. Proin ac bibendum ipsum. <a href="#">Duis eu tincidunt elit</a>. Nulla scelerisque justo at semper vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent ornare sit amet magna sed rhoncus.</p>
     	</div>
 	</div>
 	
@@ -63,20 +84,6 @@
         	</ul>
     	</div>
 	</div>
-	
-	<!-- Video chat 
-	<div class="row">
-    	<div class="col-1 main-video">
-    		<div class="video-holder">
-    			<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    			<div id="picture-in-picture" class="h-p">
-    				<div class="video-holder-sm">
-    					<iframe src="//player.vimeo.com/video/65307140?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-	</div><!-- /.row -->
 	
 	<!-- Calendar -->
 	<div class="row">
@@ -173,19 +180,20 @@
         	</ul>
 		</div><!-- /.col-2 -->
 		<div class="col-2">
-			Test content III. <span class="h-d">Hidden desktop.</span>
+			<h3>Lorem ipsum dolor</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum quis ipsum sit amet fringilla. Integer hendrerit dui nec nibh tincidunt mattis. Morbi at enim molestie, feugiat ipsum non, lacinia sem. Fusce arcu quam, tincidunt eu dapibus id, aliquam id ligula. Proin ac bibendum ipsum. <a style="color:white;" href="#">Duis eu tincidunt elit</a>. Nulla scelerisque justo at semper vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent ornare sit amet magna sed rhoncus.</p>
 		</div><!-- /.col-2 -->
 	</div><!-- /.row -->
 	
 	<div class="row">
 		<div class="col-3">
-			Test content IV.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum quis ipsum sit amet fringilla. Integer hendrerit dui nec nibh tincidunt mattis. Morbi at enim molestie, feugiat ipsum non, lacinia sem. Fusce arcu quam, tincidunt eu dapibus id, aliquam id ligula. Proin ac bibendum ipsum. <a style="color:white;" href="#">Duis eu tincidunt elit</a>. Nulla scelerisque justo at semper vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent ornare sit amet magna sed rhoncus.
 		</div><!-- /.col-3 -->
 		<div class="col-3">
-			Test content V.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum quis ipsum sit amet fringilla. Integer hendrerit dui nec nibh tincidunt mattis. Morbi at enim molestie, feugiat ipsum non, lacinia sem. Fusce arcu quam, tincidunt eu dapibus id, aliquam id ligula. Proin ac bibendum ipsum. <a style="color:white;" href="#">Duis eu tincidunt elit</a>. Nulla scelerisque justo at semper vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent ornare sit amet magna sed rhoncus.
 		</div><!-- /.col-3 -->
 		<div class="col-3">
-			Test content VI.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum quis ipsum sit amet fringilla. Integer hendrerit dui nec nibh tincidunt mattis. Morbi at enim molestie, feugiat ipsum non, lacinia sem. Fusce arcu quam, tincidunt eu dapibus id, aliquam id ligula. Proin ac bibendum ipsum. <a style="color:white;" href="#">Duis eu tincidunt elit</a>. Nulla scelerisque justo at semper vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent ornare sit amet magna sed rhoncus.
 		</div><!-- /.col-3 -->
 	</div><!-- /.row -->
 	
@@ -201,21 +209,6 @@
 		</div><!-- /.col-4 -->
 		<div class="col-4">
 			Lorem ipsum.
-		</div><!-- /.col-4 -->
-	</div><!-- /.row -->
-	
-	<div class="row">
-		<div class="col-4">
-			Test content VII.
-		</div><!-- /.col-4 -->
-		<div class="col-4">
-			Test content VIII.
-		</div><!-- /.col-4 -->
-		<div class="col-4">
-			Test content IX.
-		</div><!-- /.col-4 -->
-		<div class="col-4">
-			Test content X.
 		</div><!-- /.col-4 -->
 	</div><!-- /.row -->
 	

@@ -17,7 +17,6 @@ less = {
 // Sticky header
 $(function(){
 var stickyRibbonTop = $('#header').offset().top;
-  
 $(window).scroll(function(){
         if( $(window).scrollTop() > stickyRibbonTop ) {
                 $('#header').css({position: 'fixed', top: '0px'});

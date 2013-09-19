@@ -18,7 +18,7 @@ body {
     -webkit-transition: all .2s linear;
     
     a {
-        color: inherit;
+        color: @3;
         text-decoration: none;
         &:hover {
             color: white;
@@ -32,6 +32,10 @@ body {
         -webkit-margin-start: 0;
         -webkit-margin-end: 0;
         -webkit-padding-start: 0;
+        
+        li {
+            text-align: inherit;
+        }
     }
 }
 
@@ -71,7 +75,9 @@ body {
 
 .col-1 {color: white; background: @1;}
 
-.col-1.main-video {background: @1;}
+.col-1.main-video {
+    background: @1;
+}
 
 .col-2 {color: @5; background: @3;}
 
@@ -82,6 +88,10 @@ body {
 .clearfix {clear:both;}
 
 .col-1.main-video {padding: 1px;}
+
+.col-1.list, .col-2.list {
+    padding: 0;
+}
 
 .video-holder {
 	position: relative;
@@ -131,8 +141,4 @@ body {
 			}
 		}
 	}
-}
-
-.col-1.list, .col-2.list {
-    padding: 0;
 }
