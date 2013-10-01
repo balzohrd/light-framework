@@ -1,56 +1,34 @@
-<!-- Overlay -->
-<div id="overlay"></div>
-
-<header id="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-1">
-				<span style="float:left;">
-				    <a href="/light">
-    				    <img class="top-logo" src="img/img-trans.png" width="1" height="1" />
-				    </a>
-				</span>
-				<span style="float:right;">
-					<ul class="h-p h-t">
-						<li><a href="#home"><i class="icon-th"></i> Home</a></li>
-						<li><a href="#profile"><i class="icon-group"></i> Profile</a></li>
-						<li><a id="right-menu" href="#right-menu"><i class="icon-cogs"></i> Account</a></li>
-						<li><a href="#login"><i class="icon-signin"></i> Login</a></li>
-					</ul>
-					<ul class="h-d">
-						<li><a href="#home"><i class="icon-th"></i></a></li>
-						<li><a href="#profile"><i class="icon-group"></i></a></li>
-						<li><a href="#account"><i class="icon-cogs"></i></a></li>
-						<li><a href="#login"><i class="icon-signin"></i><span id="login-text"> Login</span></a></li>
-					</ul>
-				</span>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-</header>
-<!-- !Body -->
+<!DOCTYPE html>   
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<!--[if IE]><![endif]-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Executionists responsive framework</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="" />
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="img/nav.png"/>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	
+	<!-- Webfont -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+    
+    <!-- FontAwesome -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	
+	<!-- jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+	<!-- LESS/CSS -->
+    <link href="css/styles.less" rel="stylesheet/less" type="text/css" media="screen">
+    
+    <!-- JS -->
+    <script src="js/app.js"></script>
+    <script src="js/less.js"></script>
+</head>
 <body>
-
-<!-- Sidr menu -->
-<script>
-$(document).ready(function() {
-    $('#right-menu').sidr({
-      name: 'sidr-right',
-      side: 'right'
-    });
-});
-</script>
-
-<div id="sidr-right">
-  <!-- Your content -->
-  <ul>
-    <li class="active"><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
-    <li><a href="/light"><i class="icon-double-angle-right"></i> Account option</a></li>
-  </ul>
-</div>
