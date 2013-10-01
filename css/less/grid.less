@@ -4,17 +4,11 @@
 and (min-width : 320px) 
 and (max-width : 479px) {
 	.container {
-		width: 98%;
-		margin: 0 1%;
-		transition: margin .5s ease;
-		-moz-transition: margin .5s ease;
-		-webkit-transition: margin .5s ease;
+		width: 95%;
+		margin: 0 2.5%;
 	}
 	
 	.row {
-		transition: position .5s ease;
-		-moz-transition: position .5s ease;
-		-webkit-transition: position .5s ease;
 		
 		.col-1, .col-2, .col-3, .col-4 {
 			width: 100%;
@@ -33,17 +27,11 @@ and (max-width : 479px) {
 and (min-width : 480px) 
 and (max-width : 767px) {
 	.container {
-		width: 95%;
-		margin: 0 2.5%;
-		transition: margin .5s ease;
-		-moz-transition: margin .5s ease;
-		-webkit-transition: margin .5s ease;
+		width: 97%;
+		margin: 0 1.5%;
 	}
 	
 	.row {
-		transition: position .5s ease;
-		-moz-transition: position .5s ease;
-		-webkit-transition: position .5s ease;
 		
 		.col-1 {
 			width: 100%;
@@ -74,15 +62,9 @@ and (max-width : 1024px) {
 	.container {
 		width: 90%;
 		margin: 0 5%;
-		transition: margin .5s ease;
-		-moz-transition: margin .5s ease;
-		-webkit-transition: margin .5s ease;
 	}
 	
 	.row {
-		transition: position .5s ease;
-		-moz-transition: position .5s ease;
-		-webkit-transition: position .5s ease;
 		
 		.col-1 {
 			width: 100%;
@@ -135,85 +117,13 @@ and (max-width : 1024px) {
 
 // Desktop
 @media only screen 
-and (min-width : 1025px)
-and (max-width : 1823px) {
+and (min-width : 1025px) {
 	.container {
-		width: 65%;
-		margin: 0 17.5%;
-		transition: margin .5s ease;
-		-moz-transition: margin .5s ease;
-		-webkit-transition: margin .5s ease;
+		width: 1000px;
+		margin: 0 auto;
 	}
 	
 	.row {
-		transition: position .5s ease;
-		-moz-transition: position .5s ease;
-		-webkit-transition: position .5s ease;
-		
-		.col-1 {
-			width: 100%;
-			float: left;
-			margin-right: 0 !important;
-			clear: both;
-		}
-	
-		.col-2 {
-			width: 49%;
-			margin-right: 2%;
-			display: inline-block;
-			float: left;
-		}
-		
-		.col-2:nth-child(2n+2) {
-			margin-right: 0 !important;
-		}
-		
-		.col-3 {
-			width: 32%;
-			margin-right: 2%;
-			display: inline-block;
-			float: left;
-			&:nth-child(3) {
-				width: 32%;
-				margin-right: 0 !important;
-				display: inline-block;
-				float: right;
-			}
-		}
-		
-		.col-4 {
-			width: 23.5%;
-			margin-right: 2%;
-			display: inline-block;
-			float: left;
-			&:nth-child(4) {
-				width: 23.5%;
-				margin-right: 0 !important;
-				display: inline-block;
-				float: right;
-			}
-		}
-	}
-	
-	.h-d {display: none !important;}
-	.v-d {display: block !important;}
-}
-
-// Large desktop
-@media only screen 
-and (min-width : 1824px) {
-	.container {
-		width: 55%;
-		margin: 0 22.5%;
-		transition: margin .5s ease;
-		-moz-transition: margin .5s ease;
-		-webkit-transition: margin .5s ease;
-	}
-	
-	.row {
-		transition: all .5s ease;
-		-moz-transition: all .5s ease;
-		-webkit-transition: all .5s ease;
 		
 		.col-1 {
 			width: 100%;

@@ -3,7 +3,7 @@
 <div class="container">
 	<div class="row">
     	<div class="col-1">
-        	Test content.
+        	Column 1
     	</div><!-- /.col-1 -->
 	</div><!-- /.row -->
 </div><!-- /.container -->
@@ -11,10 +11,10 @@
 <div class="container">
 	<div class="row">
     	<div class="col-2">
-        	Test content.
+        	Column 1
     	</div><!-- /.col-2 -->
     	<div class="col-2">
-        	Test content.
+        	Column 2
     	</div><!-- /.col-2 -->
 	</div><!-- /.row -->
 </div><!-- /.container -->
@@ -22,13 +22,13 @@
 <div class="container">
 	<div class="row">
     	<div class="col-3">
-        	Test content.
+        	Column 1
     	</div><!-- /.col-3 -->
     	<div class="col-3">
-        	Test content.
+        	Column 2
     	</div><!-- /.col-3 -->
     	<div class="col-3">
-        	Test content.
+        	Column 3
     	</div><!-- /.col-3 -->
 	</div><!-- /.row -->
 </div><!-- /.container -->
